@@ -71,13 +71,23 @@
       }
 
       .decorative-images .img-left {
-        top: 10%;
-        left: 5%;
+        top: 3%;
+        left: 2%;
       }
 
+      .decorative-images .img-left-2 {
+        bottom: 2%;
+        left: 2%;
+        animation-delay: -3s;
+      }
       .decorative-images .img-right {
-        bottom: 10%;
-        right: 5%;
+        top: 3%;
+        right: 2%;
+        
+      }
+        .decorative-images .img-right-2{
+        bottom: 2%;
+        right: 2%;
         animation-delay: -3s;
       }
 
@@ -258,11 +268,7 @@
         transition: transform 0.6s ease-in-out;
       }
       
-      .overlay-panel img {
-        max-width: 200px;
-        margin-bottom: 20px;
-      }
-      
+
       .overlay-panel p {
         font-size: 14px;
         font-weight: 300;
@@ -436,18 +442,27 @@ button#modalCancel {
     right: 10px;
 }
 
+
+.form-container img {
+    position: absolute;
+    max-width: 200px;
+    margin: 8% 26%;
+}
     </style>
   </head>
   <body>
     
     <div class="decorative-images">
         <img src="GPS-Screenshot-1.jpg" alt="GPS Screenshot 1" class="img-left">
-        <img src="GPS-Screenshot-2.jpg" alt="GPS Screenshot 2" class="img-right">
+        <img src="GPS-Screenshot-4.jpg" alt="GPS Screenshot 2" class="img-left-2">
+        <img src="GPS-Screenshot-3.jpg" alt="GPS Screenshot 2" class="img-right">
+        <img src="GPS-Screenshot-2.jpg" alt="GPS Screenshot 2" class="img-right-2">
     </div>
 
     <div class="container" id="container">
       <!-- Sign Up Form -->
       <div class="form-container sign-up-container">
+        <img src="https://res.cloudinary.com/tracking/image/upload/q_auto/v1728049322/logos/NV_Logo_Charcoal-Blue_fxqbir.png" alt="Logo">
         <form action="#" method="post">
           <h1>Create Account</h1>
           <div class="input-group">
@@ -475,6 +490,7 @@ button#modalCancel {
 
       <!-- Sign In Form -->
       <div class="form-container sign-in-container">
+        <img src="https://res.cloudinary.com/tracking/image/upload/q_auto/v1728049322/logos/NV_Logo_Charcoal-Blue_fxqbir.png" alt="Logo">
         <form action="#" method="post">
           <h1>Sign In</h1>
           <div class="input-group">
@@ -498,15 +514,13 @@ button#modalCancel {
         <div class="overlay">
           <!-- Left Overlay -->
           <div class="overlay-panel overlay-left">
-            <img src="https://res.cloudinary.com/tracking/image/upload/q_auto/v1728049322/logos/NV_Logo_Charcoal-Blue_fxqbir.png" alt="Logo">
             <h1>Welcome Back!</h1>
             <p>To keep connected with us please login with your personal info</p>
             <button class="ghost" id="signIn">Sign In</button>
           </div>
           <!-- Right Overlay -->
           <div class="overlay-panel overlay-right">
-            <img src="https://res.cloudinary.com/tracking/image/upload/q_auto/v1728049322/logos/NV_Logo_Charcoal-Blue_fxqbir.png" alt="Logo">
-            <h1>Hello, Friend!</h1>
+             <h1>Hello, Friend!</h1>
             <p>Enter your personal details and start your journey with us</p>
             <button class="ghost" id="signUp">Sign Up</button>
           </div>
